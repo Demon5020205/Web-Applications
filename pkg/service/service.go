@@ -11,7 +11,7 @@ type TodoList interface {
 type TodoItem interface {
 }
 
-type Service interface {
+type Service struct {
 	Authorization
 	TodoList
 	TodoItem
