@@ -21,7 +21,7 @@ func main() {
 	
 	srv := new(todo.Server)
 	if err := srv.Run(viper.GetString("8000"), handlers.InitRoutes()); err != nil {
-		log.Fatalf("error  running http server: %s", err.Error)
+		log.Fatalf("error running http server: %s", err.Error())
 	}
 }
 
